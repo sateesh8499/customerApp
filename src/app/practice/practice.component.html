@@ -1,0 +1,33 @@
+<ion-content>
+    <div class="container">
+        <div class="input-border">
+            <ion-input type="number" placeholder="First Value" [(ngModel)]="firstValue" name="firstValue"></ion-input>
+        </div>
+        <div class="input-border">
+            <ion-input type="number" placeholder="Second Value" [(ngModel)]="secondValue" name="secondValue"></ion-input>
+        </div>
+        <ion-list>
+            <ion-radio-group (ionChange)="radioGroupChange($event.detail.value)">
+                <ion-item lines="none">
+                    <ion-label>+</ion-label>
+                    <ion-radio value="+"></ion-radio>
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-label>-</ion-label>
+                    <ion-radio value="-"></ion-radio>
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-label>/</ion-label>
+                    <ion-radio value="/"></ion-radio>
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-label>*</ion-label>
+                    <ion-radio value="*"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+        <div class="input-border">
+            <ion-input type="text" placeholder="Result" value="{{result}}"></ion-input>
+        </div>
+    </div>
+</ion-content>

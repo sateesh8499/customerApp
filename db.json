@@ -1,0 +1,93 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customersList": [
+    {
+      "id": 1,
+      "name": "Sateesh",
+      "age": "25",
+      "dob": "28-5-1996",
+      "gender": "Male",
+      "contact_reference": "Email",
+      "phone": "8499033517",
+      "email": "sateeshjagarlamoodi@gmail.com",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Harish",
+      "age": "26",
+      "dob": "5-8-1995",
+      "gender": "Male",
+      "contact_reference": "Email",
+      "phone": "9566131322",
+      "email": "harish@gmail.com",
+      "department": "IT",
+      "isActive": true
+    },
+    {
+      "name": "afjk",
+      "age": "bkdsj",
+      "dob": "2020-06-10T12:47:11.168+05:30",
+      "gender": "Female",
+      "phone": "afkdsj",
+      "email": "kjdsbk",
+      "department": "ksdjbk",
+      "isActive": true,
+      "contact_reference": "jdsnsk",
+      "id": 3
+    },
+    {
+      "name": "gnslkfd",
+      "age": "knlskd",
+      "dob": "2020-06-10T13:04:23.334+05:30",
+      "gender": "Male",
+      "phone": "jkdkj",
+      "email": "n",
+      "department": "kjjknk",
+      "isActive": true,
+      "contact_reference": "jnnkjk",
+      "id": 4
+    },
+    {
+      "name": "afln",
+      "age": "lknsdlk",
+      "dob": "2020-06-10T13:06:06.519+05:30",
+      "gender": "Male",
+      "phone": "jakfjbk",
+      "email": "bkjds",
+      "department": "jbkds",
+      "isActive": true,
+      "contact_reference": "jsbfdsjl",
+      "id": 5
+    },
+    {
+      "name": "ajfkjd",
+      "age": "bksjd",
+      "dob": "2020-06-10T13:22:13.383+05:30",
+      "gender": "",
+      "phone": "",
+      "email": "",
+      "department": "",
+      "isActive": true,
+      "contact_reference": "",
+      "id": 6
+    }
+  ]
+}
