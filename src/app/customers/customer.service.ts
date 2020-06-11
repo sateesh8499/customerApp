@@ -8,6 +8,7 @@ import { throwError, Observable } from 'rxjs';
 })
 export class CustomerService {
     private rootUrl = 'http://localhost:3000';
+    private mobileTestRootUrl = 'https://my-json-server.typicode.com/sateesh8499/customerApp';
     httpOptions = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json'
@@ -50,16 +51,31 @@ export class CustomerService {
         console.log(errorMessage);
         return throwError(errorMessage);
      }
-    // getCustomers() {
-    //     return this.http.get('https://my-json-server.typicode.com/sateesh8499/customerApp/customersList/');
+
+
+     // For Testing in mobile
+    //  getCustomers(): Observable<Customer[]> {
+    //     return this.http.get<Customer[]>(this.mobileTestRootUrl + '/customersList')
+    //     .pipe(
+    //         catchError(this.errorHandler)
+    //     );
     //  }
-    //  getCustomer(id: any) {
-    //      return this.http.get('https://my-json-server.typicode.com/sateesh8499/customerApp/customersList/' + id);
+    //  getCustomer(id: any): Observable<Customer> {
+    //      return this.http.get<Customer>(this.mobileTestRootUrl + '/customersList/' + id)
+    //      .pipe(
+    //          catchError(this.errorHandler)
+    //      );
     //  }
-    //  createCustomer(customer: any) {
-    //      return this.http.post('https://my-json-server.typicode.com/sateesh8499/customerApp/customersList/', customer);
+    //  createCustomer(customer: any): Observable<Customer> {
+    //      return this.http.post<Customer>(this.mobileTestRootUrl + '/customersList', customer, this.httpOptions)
+    //      .pipe(
+    //          catchError(this.errorHandler)
+    //      );
     //  }
-    //  deleteCustomer(id: any) {
-    //      return this.http.delete(this.apiServer + '/customersList/' + id, this.httpOptions);
+    //  deleteCustomer(id: any): Observable<Customer> {
+    //      return this.http.delete<Customer>(this.mobileTestRootUrl + '/customersList/' + id, this.httpOptions)
+    //      .pipe(
+    //          catchError(this.errorHandler)
+    //      );
     //  }
 }

@@ -37,7 +37,7 @@ export class CustomersPage implements OnInit {
         console.log(data);
       });
       this.getAllCustomers();
-      this.router.navigateByUrl('/customers/customersList');
+    //   this.router.navigate(['/customers/customersList']);
   }
 
 }
