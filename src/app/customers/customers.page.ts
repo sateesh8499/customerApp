@@ -19,6 +19,7 @@ export class CustomersPage implements OnInit {
         age: [''],
         dob: [''],
         gender: [''],
+        profilePic: [''],
         phone: [''],
         email: [''],
         department: [''],
@@ -36,6 +37,7 @@ export class CustomersPage implements OnInit {
         console.log(data);
       });
       this.getAllCustomers();
+      this.router.navigateByUrl('/customers/customersList');
   }
 
 }

@@ -1,5 +1,6 @@
 import { CustomerService } from './../customer.service';
 import { Component, OnInit } from '@angular/core';
+import { Customer } from '../customer';
 
 @Component({
   selector: 'app-customers-list',
@@ -9,13 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class CustomersListComponent implements OnInit {
 
   constructor(private customerService: CustomerService) { }
-customersData: any = [];
+customersData: Customer[] = [];
 deleteMsg: any;
   ngOnInit() {
       this.getAllCustomers();
   }
+  ngAfterViewInit(): void {
+      this.getAllCustomers();
+  }
   getAllCustomers() {
-    this.customerService.getCustomers().subscribe(data => {
+    this.customerService.getCustomers().subscribe((data: Customer[]) => {
         this.customersData = data;
     });
   }
@@ -24,7 +28,7 @@ deleteMsg: any;
       });
       this.getAllCustomers();
   }
-  doRefresh(event){ 
+  doRefresh(event){
       this.getAllCustomers();
       setTimeout(() => {
         event.target.complete();

@@ -1,0 +1,10 @@
+.table-borderless td, .table-borderless th {
+        border: none;
+}
+.profilePic{
+    margin: auto;
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

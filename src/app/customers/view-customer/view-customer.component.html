@@ -1,38 +1,67 @@
-<div class="container">      
-    <ion-card *ngFor="let customer of customerData; let i=index" style="margin: 15px;">
-      <img style="width: 20%; max-width: 200px;" src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png" />
-      <div class="card-content" style="width: 80%;">
-          <h1>{{customer.name}}</h1>
-          <div class="table-responsive">
-          <table class="table">
-              <tbody>
-                  <tr>
-                      <td>Age</td><td>{{customer.age}}</td>
-                  </tr>
-                  <tr>
-                      <td>Date of Birth</td><td>{{customer.dob}}</td>
-                  </tr>
-                  <tr>
-                      <td>Gender</td><td>{{customer.gender}}</td>
-                  </tr>
-                  <tr>
-                      <td>Phone</td><td>{{customer.phone}}</td>
-                  </tr>
-                  <tr>
-                      <td>Email</td><td>{{customer.email}}</td>
-                  </tr>
-                  <tr>
-                      <td>Department</td><td>{{customer.department}}</td>
-                  </tr>
-                  <tr>
-                      <td>is Active</td><td>{{customer.isActive}}</td>
-                  </tr>
-                  <tr>
-                      <td>Contact Reference</td><td>{{customer.contact_reference}}</td>
-                  </tr>
-              </tbody>
+<ion-header>
+    <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-menu-button menu="sideMenu"></ion-menu-button>
+    </ion-buttons>
+        <ion-title>View Customer</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+<div class="container">
+    <ion-item slot="start" lines="none" color="none" [routerLink]="['/customers/customersList']" >
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        <ion-label>Back</ion-label>
+    </ion-item>
+    <div class="card text-center" *ngFor="let customer of customerData; let i=index">
+        <div class="card-header">
+            <h1>{{customer.name}}</h1>
+        </div>
+        <div class="card-body">
+            <ion-avatar class="profilePic">
+                <img [src]="customer.profilePic" alt="Profile Picture Not Found"/>
+            </ion-avatar>
+        <!-- <img class="proPic" style="width:200px" [src]="customer.profilePic"  /> -->
+        <div class="table-responsive">
+        <table class="table table-borderless text-left">
+            <tbody class="table-body">
+              <tr>
+                <th scope="row">Age</th>
+                <td>{{customer.age}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Date of Birth</th>
+                <td>{{customer.dob}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Gender</th>
+                <td>{{customer.gender}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td>{{customer.email}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Phone No.</th>
+                <td>{{customer.phone}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Department</th>
+                <td>{{customer.department}}</td>
+              </tr>
+              <tr>
+                <th scope="row">is Active</th>
+                <td>{{customer.isActive}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Contact Reference</th>
+                <td>{{customer.contact_reference}}</td>
+              </tr>
+            </tbody>
           </table>
+        </div>
+        <button class="btn btn-secondary" [routerLink]="['/customers/view_customer/' + customer.id]" type="button">Edit</button>
+        <button class="btn btn-danger" (click)="deleteCustomer(customer.id)" type="button">Delete</button>
       </div>
+    </div> 
   </div>
-    </ion-card>
-</div>
+</ion-content>
