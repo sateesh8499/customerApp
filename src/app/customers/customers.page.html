@@ -26,9 +26,9 @@
             </ion-item>
             <ion-list>
                 <ion-radio-group name="auto" value="Male" formControlName="gender">
-                    <ion-list-header>
-                        <ion-label>Gender</ion-label>
-                    </ion-list-header>
+                    <ion-item lines="none">
+                        <h4>Gender</h4>
+                    </ion-item>
                     <ion-item>
                         <ion-label>Male</ion-label>
                         <ion-radio value="Male"></ion-radio>
@@ -43,9 +43,14 @@
                     </ion-item>
                 </ion-radio-group>
             </ion-list>
+            <ion-item lines="none" *ngIf="isImgTrue">
+                <ion-avatar slot="start">
+                    <img [src]="proImage" alt="Invalid URL" />
+                </ion-avatar>
+            </ion-item>
             <ion-item lines="inset">
                 <ion-label position="floating">Image Link Address</ion-label>
-                <ion-input formControlName="profilePic" type="text"></ion-input>
+                <ion-input formControlName="profilePic" (keyup)="previewImg($event)" type="text"></ion-input>
             </ion-item>
             <ion-item lines="inset">
                 <ion-label position="floating">Phone</ion-label>

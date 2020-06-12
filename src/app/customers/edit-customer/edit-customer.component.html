@@ -1,68 +1,70 @@
 <ion-header>
     <ion-toolbar>
-    <ion-buttons slot="start">
-        <ion-menu-button menu="sideMenu"></ion-menu-button>
-    </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-menu-button menu="sideMenu"></ion-menu-button>
+        </ion-buttons>
         <ion-title>Edit Customer</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <form class="card-body" [formGroup]="editForm" (ngSubmit)="onSubmit()">
-        <ion-item lines="inset">
-            <ion-label position="floating">Name</ion-label>
-            <ion-input required formControlName="name" type="text"></ion-input>
-        </ion-item>
-        <ion-item lines="inset">
-            <ion-label position="floating">Age</ion-label>
-            <ion-input formControlName="age" type="text"></ion-input>
-        </ion-item>
-        <ion-item lines="inset">
-            <ion-label>Date of Birth</ion-label>
-            <ion-datetime display-format="DD.MM.YYYY" formControlName="dob"></ion-datetime>
-        </ion-item>
-        <ion-list>
-            <ion-radio-group name="auto" value="Male" formControlName="gender">
-                <ion-list-header>
-                    <ion-label>Gender</ion-label>
-                </ion-list-header>
-                <ion-item>
-                    <ion-label>Male</ion-label>
-                    <ion-radio value="Male"></ion-radio>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Female</ion-label>
-                    <ion-radio value="Female"></ion-radio>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Others</ion-label>
-                    <ion-radio value="Others"></ion-radio>
-                </ion-item>
-            </ion-radio-group>
-        </ion-list>
-        <ion-item lines="inset">
-            <ion-label position="floating">Image Link Address</ion-label>
-            <ion-input formControlName="profilePic" type="text"></ion-input>
-        </ion-item>
-        <ion-item lines="inset">
-            <ion-label position="floating">Phone</ion-label>
-            <ion-input formControlName="phone" type="text"></ion-input>
-        </ion-item>
-        <ion-item lines="inset">
-            <ion-label position="floating">Email</ion-label>
-            <ion-input formControlName="email" type="email"></ion-input>
-        </ion-item>
-        <ion-item lines="inset">
-            <ion-label position="floating">Department</ion-label>
-            <ion-input formControlName="department" type="text"></ion-input>
-        </ion-item>
-        <ion-item lines="inset">
-            <ion-label position="floating">Contact Reference</ion-label>
-            <ion-input formControlName="contact_reference" type="text"></ion-input>
-        </ion-item>
-            <div class="card-footer" style="background: none; margin-top: 5px;">
-                <ion-button block color="primary" type="submit" [disabled]="editForm.invalid">
-                    Add Customer
+    <div class="card">
+        <form class="card-body" [formGroup]="editForm" (ngSubmit)="onSubmit()">
+            <ion-item lines="inset">
+                <ion-label position="floating">Name</ion-label>
+                <ion-input required formControlName="name" type="text"></ion-input>
+            </ion-item>
+            <ion-item lines="inset">
+                <ion-label position="floating">Age</ion-label>
+                <ion-input formControlName="age" type="text"></ion-input>
+            </ion-item>
+            <ion-item lines="inset">
+                <ion-label>Date of Birth</ion-label>
+                <ion-datetime display-format="DD.MM.YYYY" formControlName="dob"></ion-datetime>
+            </ion-item>
+            <ion-list>
+                <ion-radio-group name="auto" value="Male" formControlName="gender">
+                    <ion-item lines="none">
+                        <h4>Gender</h4>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Male</ion-label>
+                        <ion-radio value="Male"></ion-radio>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Female</ion-label>
+                        <ion-radio value="Female"></ion-radio>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Others</ion-label>
+                        <ion-radio value="Others"></ion-radio>
+                    </ion-item>
+                </ion-radio-group>
+            </ion-list>
+            <ion-item lines="inset">
+                <ion-label position="floating">Image Link Address</ion-label>
+                <ion-input formControlName="profilePic" type="text"></ion-input>
+            </ion-item>
+            <ion-item lines="inset">
+                <ion-label position="floating">Phone</ion-label>
+                <ion-input formControlName="phone" type="text"></ion-input>
+            </ion-item>
+            <ion-item lines="inset">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input formControlName="email" type="email"></ion-input>
+            </ion-item>
+            <ion-item lines="inset">
+                <ion-label position="floating">Department</ion-label>
+                <ion-input formControlName="department" type="text"></ion-input>
+            </ion-item>
+            <ion-item lines="inset">
+                <ion-label position="floating">Contact Reference</ion-label>
+                <ion-input formControlName="contact_reference" type="text"></ion-input>
+            </ion-item>
+            <div class="card-footer" style="border: none; margin-top: 5px;">
+                <ion-button color="primary" type="submit" [disabled]="editForm.invalid">
+                    Update
                 </ion-button>
             </div>
-    </form>
+        </form>
+    </div>
 </ion-content>

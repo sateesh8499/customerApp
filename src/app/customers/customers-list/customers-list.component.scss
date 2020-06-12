@@ -21,8 +21,12 @@
     text-align: center;
 }
 ion-content{
-    --background: rgba(139, 0, 167, 0.651);
+    --background: rgb(139, 0, 167);
 }
 .list-background{
     padding: 10px;
+}
+ion-item{
+    margin: 5px;
+    border-radius: 20px;
 }

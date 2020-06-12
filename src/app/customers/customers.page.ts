@@ -13,6 +13,8 @@ export class CustomersPage implements OnInit {
   constructor(private fb: FormBuilder, private customerService: CustomerService, private router: Router) { }
   customerForm: FormGroup;
   customer: any;
+  proImage: any;
+  isImgTrue: any;
   ngOnInit() {
       this.customerForm = this.fb.group({
         name: [''],
@@ -27,6 +29,10 @@ export class CustomersPage implements OnInit {
         contact_reference: ['']
       });
       this.getAllCustomers();
+  }
+  previewImg(event) {
+      this.isImgTrue = true;
+      this.proImage = event.target.value;
   }
   getAllCustomers() {
       this.customerService.getCustomers().subscribe(data => data);

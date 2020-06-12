@@ -20,6 +20,14 @@
             <ion-avatar class="profilePic">
                 <img [src]="customer.profilePic" alt="Profile Picture Not Found"/>
             </ion-avatar>
+            <ion-button [routerLink]="['/customers/edit_customer/' + customer.id]">
+                <ion-icon slot="start" name="create"></ion-icon>
+                Edit
+            </ion-button>
+            <ion-button color="danger" (click)="deleteCustomer(customer.id)">
+                <ion-icon slot="start" name="trash"></ion-icon>
+                Delete
+            </ion-button>
         <!-- <img class="proPic" style="width:200px" [src]="customer.profilePic"  /> -->
         <div class="table-responsive">
         <table class="table table-borderless text-left">
@@ -59,8 +67,6 @@
             </tbody>
           </table>
         </div>
-        <button class="btn btn-secondary" [routerLink]="['/customers/edit_customer/' + customer.id]" type="button">Edit</button>
-        <button class="btn btn-danger" (click)="deleteCustomer(customer.id)" type="button">Delete</button>
       </div>
     </div> 
   </div>
