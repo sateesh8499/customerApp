@@ -11,9 +11,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
     routing = [
-        { title: 'Home', url: '/home' },
-        { title: 'Customers', url: '/customers' },
-        { title: 'Customers List', url: '/customers/customersList' },
+        { title: 'Home', url: '/home', icon: 'home' },
+        { title: 'Customers', url: '/customers', icon: 'people-circle-outline' },
+        { title: 'Customers List', url: '/customers/customersList', icon: 'list' },
     ];
   constructor(
     private platform: Platform,

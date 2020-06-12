@@ -59,7 +59,7 @@
             </tbody>
           </table>
         </div>
-        <button class="btn btn-secondary" [routerLink]="['/customers/view_customer/' + customer.id]" type="button">Edit</button>
+        <button class="btn btn-secondary" [routerLink]="['/customers/edit_customer/' + customer.id]" type="button">Edit</button>
         <button class="btn btn-danger" (click)="deleteCustomer(customer.id)" type="button">Delete</button>
       </div>
     </div> 

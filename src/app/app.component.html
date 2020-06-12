@@ -1,13 +1,14 @@
 <ion-app>
     <ion-menu side="start" menuId="sideMenu" contentId="main">
         <ion-header>
-          <ion-toolbar color="light" style="text-align: center;">
+          <ion-toolbar style=" text-align: center;">
             <ion-title>Menu</ion-title>
           </ion-toolbar>
         </ion-header>
         <ion-content>
             <ion-menu-toggle *ngFor="let item of routing">
-                <ion-item [routerLink]="item.url">
+                <ion-item [routerLink]="item.url" lines="full">
+                    <ion-icon slot="start" name="{{item.icon}}"></ion-icon>
                     <ion-label>{{item.title}}</ion-label>
                 </ion-item>
             </ion-menu-toggle>

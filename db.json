@@ -1,138 +1,138 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customersList": [
+    {
+      "name": "Sateesh",
+      "age": "25",
+      "dob": "1996-05-28T23:35:07.578+05:30",
+      "gender": "Male",
+      "profilePic": "https://www.w3schools.com/w3images/avatar2.png",
+      "phone": "8499033517",
+      "email": "sateesh@gmail.com",
+      "department": "IT",
+      "isActive": true,
+      "contact_reference": "8461661625",
+      "id": 1
     },
-    "customersList": [
-        {
-            "name": "Sateesh",
-            "age": "25",
-            "dob": "1996-05-28T23:35:07.578+05:30",
-            "gender": "Male",
-            "profilePic": "https://lh3.googleusercontent.com/proxy/jKInoJTc98MtdSRy6NNNSrm2Pl7rvfG4X0F_to4i1AzHr1RzJdXf7DeSLw_G98wutO1r7DTckxZYbvSnfa_cayFIkq-ntZf3nAaqps8T0tN0EOGDCMW6",
-            "phone": "8499033517",
-            "email": "sateesh@gmail.com",
-            "department": "IT",
-            "isActive": true,
-            "contact_reference": "8461661625",
-            "id": 1
-        },
-        {
-            "name": "Parveen",
-            "age": "20",
-            "dob": "1999-04-11T20:29:21.486+05:30",
-            "gender": "Female",
-            "profilePic": "https://i7.pngflow.com/pngimage/183/595/png-profession-computer-icons-job-teacher-avatar-profile-avatar-blue-logo-computer-wallpaper-expert-clipart.png",
-            "phone": "1551551522",
-            "email": "parveen@gmail.com",
-            "department": "House Wife",
-            "isActive": true,
-            "contact_reference": "8516156532",
-            "id": 2
-        },
-        {
-            "name": "Harish",
-            "age": "26",
-            "dob": "1995-06-10T23:45:10.833+05:30",
-            "gender": "Male",
-            "profilePic": "https://f0.pngfuel.com/png/136/22/profile-icon-illustration-user-profile-computer-icons-girl-customer-avatar-png-clip-art.png",
-            "phone": "9151122202",
-            "email": "harish@gmail,com",
-            "department": "IT",
-            "isActive": true,
-            "contact_reference": "6526265155",
-            "id": 3
-        },
-        {
-            "name": "Avatar",
-            "age": "50",
-            "dob": "2020-07-11T20:29:21.486+05:30",
-            "gender": "Male",
-            "profilePic": "https://i.ytimg.com/vi/aEvItEpMly8/maxresdefault.jpg",
-            "phone": "46154165316",
-            "email": "avatar@gmail.com",
-            "department": "MD",
-            "isActive": true,
-            "contact_reference": "51561651532",
-            "id": 4
-        },
-        {
-            "name": "Jilani",
-            "age": "26",
-            "dob": "2020-06-13T20:44:23.892+05:30",
-            "gender": "Male",
-            "profilePic": "https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar.png",
-            "phone": "16161615656",
-            "email": "jilani@gmail.com",
-            "department": "IT",
-            "isActive": true,
-            "contact_reference": "46516166516",
-            "id": 5
-        },
-        {
-            "name": "Suresh",
-            "age": "22",
-            "dob": "2020-06-11T21:11:26.906+05:30",
-            "gender": "Male",
-            "profilePic": "https://www.kindpng.com/picc/m/668-6687298_cartoon-avatar-png-download-image-gaming-avatar-logo.png",
-            "phone": "4986161655",
-            "email": "suresh@gmail.com",
-            "department": "MBA",
-            "isActive": true,
-            "contact_reference": "8451616652",
-            "id": 6
-        },
-        {
-            "name": "Areef",
-            "age": "25",
-            "dob": "2020-06-11T21:11:26.906+05:30",
-            "gender": "Male",
-            "profilePic": "https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png",
-            "phone": "2121515151",
-            "email": "areef@gmail.com",
-            "department": "MBA",
-            "isActive": true,
-            "contact_reference": "5151515152",
-            "id": 7
-        },
-        {
-            "name": "Khaja",
-            "age": "26",
-            "dob": "2020-03-11T21:11:26.906+05:30",
-            "gender": "Male",
-            "profilePic": "https://cdn.onlinewebfonts.com/svg/img_258083.png",
-            "phone": "5155164645",
-            "email": "khaja@gmail.com",
-            "department": "Civil",
-            "isActive": true,
-            "contact_reference": "6263031231",
-            "id": 8
-        },
-        {
-            "name": "Subhani",
-            "age": "30",
-            "dob": "1992-06-13T20:44:23.892+05:30",
-            "gender": "Male",
-            "profilePic": "https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar.png",
-            "phone": "5144654152",
-            "email": "subhani@gmail.com",
-            "department": "Business",
-            "isActive": true,
-            "contact_reference": "5161535633",
-            "id": 9
-        }
-    ]
+    {
+      "name": "Parveen",
+      "age": "20",
+      "dob": "1999-04-11T20:29:21.486+05:30",
+      "gender": "Female",
+      "profilePic": "https://i7.pngflow.com/pngimage/183/595/png-profession-computer-icons-job-teacher-avatar-profile-avatar-blue-logo-computer-wallpaper-expert-clipart.png",
+      "phone": "1551551522",
+      "email": "parveen@gmail.com",
+      "department": "House Wife",
+      "isActive": true,
+      "contact_reference": "8516156532",
+      "id": 2
+    },
+    {
+      "name": "Harish",
+      "age": "26",
+      "dob": "1995-06-10T23:45:10.833+05:30",
+      "gender": "Male",
+      "profilePic": "https://f0.pngfuel.com/png/136/22/profile-icon-illustration-user-profile-computer-icons-girl-customer-avatar-png-clip-art.png",
+      "phone": "9151122202",
+      "email": "harish@gmail,com",
+      "department": "IT",
+      "isActive": true,
+      "contact_reference": "6526265155",
+      "id": 3
+    },
+    {
+      "name": "Avatar",
+      "age": "50",
+      "dob": "2020-07-11T20:29:21.486+05:30",
+      "gender": "Male",
+      "profilePic": "https://i.ytimg.com/vi/aEvItEpMly8/maxresdefault.jpg",
+      "phone": "46154165316",
+      "email": "avatar@gmail.com",
+      "department": "MD",
+      "isActive": true,
+      "contact_reference": "51561651532",
+      "id": 4
+    },
+    {
+      "name": "Jilani",
+      "age": "26",
+      "dob": "2020-06-13T20:44:23.892+05:30",
+      "gender": "Male",
+      "profilePic": "https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar.png",
+      "phone": "16161615656",
+      "email": "jilani@gmail.com",
+      "department": "IT",
+      "isActive": true,
+      "contact_reference": "46516166516",
+      "id": 5
+    },
+    {
+      "name": "Suresh",
+      "age": "22",
+      "dob": "2020-06-11T21:11:26.906+05:30",
+      "gender": "Male",
+      "profilePic": "https://www.kindpng.com/picc/m/668-6687298_cartoon-avatar-png-download-image-gaming-avatar-logo.png",
+      "phone": "4986161655",
+      "email": "suresh@gmail.com",
+      "department": "MBA",
+      "isActive": true,
+      "contact_reference": "8451616652",
+      "id": 6
+    },
+    {
+      "name": "Areef",
+      "age": "25",
+      "dob": "2020-06-11T21:11:26.906+05:30",
+      "gender": "Male",
+      "profilePic": "https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png",
+      "phone": "2121515151",
+      "email": "areef@gmail.com",
+      "department": "MBA",
+      "isActive": true,
+      "contact_reference": "5151515152",
+      "id": 7
+    },
+    {
+      "name": "Khaja",
+      "age": "26",
+      "dob": "2020-03-11T21:11:26.906+05:30",
+      "gender": "Male",
+      "profilePic": "https://cdn.onlinewebfonts.com/svg/img_258083.png",
+      "phone": "5155164645",
+      "email": "khaja@gmail.com",
+      "department": "Civil",
+      "isActive": true,
+      "contact_reference": "6263031231",
+      "id": 8
+    },
+    {
+      "name": "Subhani",
+      "age": "30",
+      "dob": "1992-06-13T20:44:23.892+05:30",
+      "gender": "Male",
+      "profilePic": "https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar.png",
+      "phone": "5144654152",
+      "email": "subhani@gmail.com",
+      "department": "Business",
+      "isActive": true,
+      "contact_reference": "5161535633",
+      "id": 9
+    }
+  ]
 }

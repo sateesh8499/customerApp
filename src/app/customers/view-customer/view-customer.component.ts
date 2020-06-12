@@ -11,12 +11,11 @@ export class ViewCustomerComponent implements OnInit {
 
   constructor(private router: Router, private activatedRouter: ActivatedRoute, private customerService: CustomerService) { }
   customerData: any = [];
-  customersData: any= [];
+  customersData: any = [];
   ngOnInit() {
     const id = this.activatedRouter.snapshot.paramMap.get('id');
     this.customerService.getCustomer(id).subscribe(data => {
         this.customerData.push(data);
-        console.log(data);
     });
   }
   getAllCustomers() {

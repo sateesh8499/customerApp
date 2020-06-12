@@ -1,3 +1,4 @@
+import { EditCustomerComponent } from './edit-customer/edit-customer.component';
 import { ViewCustomerComponent } from './view-customer/view-customer.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,7 @@ const routes: Routes = [
   },
   { path: 'customersList', component: CustomersListComponent },
   { path: 'view_customer/:id', component: ViewCustomerComponent },
+  { path: 'edit_customer/:id', component: EditCustomerComponent },
 ];
 
 @NgModule({

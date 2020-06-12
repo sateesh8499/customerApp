@@ -14,18 +14,20 @@
     <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
         <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
-    <ion-item *ngFor="let customer of customersData; let i=index"
-        [routerLink]="['/customers/view_customer/' + customer.id]">
-        <ion-toolbar>
-            <ion-avatar slot="start" style="margin: 5px;">
-                <img [src]="customer.profilePic">
-            </ion-avatar>
-            <ion-buttons slot="primary">
-                <ion-button color="secondary">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </ion-button>
-            </ion-buttons>
-            <ion-title>{{customer.name}}</ion-title>
-        </ion-toolbar>
-    </ion-item>
+    <div class="list-background">
+        <ion-item @items *ngFor="let customer of customersData; let i=index"
+            [routerLink]="['/customers/view_customer/' + customer.id]">
+            <ion-toolbar>
+                <ion-avatar slot="start" style="margin: 5px;">
+                    <img [src]="customer.profilePic">
+                </ion-avatar>
+                <ion-buttons slot="primary">
+                    <ion-button color="secondary">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+                <ion-title>{{customer.name}}</ion-title>
+            </ion-toolbar>
+        </ion-item>
+    </div>
 </ion-content>

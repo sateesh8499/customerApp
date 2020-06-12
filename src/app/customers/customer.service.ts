@@ -33,6 +33,12 @@ export class CustomerService {
             catchError(this.errorHandler)
         );
     }
+    editCustomer(customer: any, id): Observable<Customer> {
+        return this.http.put<Customer>(this.rootUrl + '/customersList/' + id, customer, this.httpOptions)
+        .pipe(
+            catchError(this.errorHandler)
+        );
+    }
     deleteCustomer(id: any): Observable<Customer> {
         return this.http.delete<Customer>(this.rootUrl + '/customersList/' + id, this.httpOptions)
         .pipe(
@@ -41,7 +47,7 @@ export class CustomerService {
     }
     errorHandler(error) {
         let errorMessage = '';
-        if(error.error instanceof ErrorEvent) {
+        if (error.error instanceof ErrorEvent) {
           // Get client-side error
           errorMessage = error.error.message;
         } else {
